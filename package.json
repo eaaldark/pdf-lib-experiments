@@ -1,0 +1,41 @@
+{
+  "name": "backend-crud",
+  "version": "1.0.0",
+  "description": "testing",
+  "nodemonConfig": {
+    "watch": [
+      "server"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "*.test.ts"
+    ],
+    "delay": "3",
+    "execMap": {
+      "ts": "ts-node"
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "pdf-lib": "nodemon --config nodemon.json ./src/index.ts",
+    "build:tsc": "tsc --project ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "/issues"
+  },
+  "homepage": "#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "pdf-lib": "^1.17.1"
+  }
+}
